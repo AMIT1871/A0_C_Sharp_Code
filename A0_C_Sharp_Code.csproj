@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B08F4340-2E1F-459A-B170-4778C2ABFF88}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>A0_C_Sharp_Code</RootNamespace>
+    <AssemblyName>A0_C_Sharp_Code</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A0_Hellow_World.cs" />
+    <Compile Include="A00_User_Input_Output.cs" />
+    <Compile Include="A3_Operators.cs" />
+    <Compile Include="A4_If.cs" />
+    <Compile Include="A5_If_else.cs" />
+    <Compile Include="A6_else_if.cs" />
+    <Compile Include="A7_Nested_If.cs" />
+    <Compile Include="A8_switch_case.cs" />
+    <Compile Include="A9_while_loop.cs" />
+    <Compile Include="A10_do_while_loop.cs" />
+    <Compile Include="A11_for_loop.cs" />
+    <Compile Include="A12_foreach_loop.cs" />
+    <Compile Include="A13_break.cs" />
+    <Compile Include="A14_goto.cs" />
+    <Compile Include="A15_continue.cs" />
+    <Compile Include="A16_operators.cs" />
+    <Compile Include="A17_array.cs" />
+    <Compile Include="A18_method.cs" />
+    <Compile Include="A19_string.cs" />
+    <Compile Include="A20_star_pattern.cs" />
+    <Compile Include="A21_mobile_class_and_object.cs" />
+    <Compile Include="A22_constructor1.cs" />
+    <Compile Include="A23_single_inheritance_A.cs" />
+    <Compile Include="A24_multi_level_inheritance_A.cs" />
+    <Compile Include="A25_multiple_inheritance_A.cs" />
+    <Compile Include="A26_hierarchical_inheritance_A.cs" />
+    <Compile Include="A27_Polymorphism_A.cs" />
+    <Compile Include="A1_Variables_and_Data_types.cs" />
+    <Compile Include="A2_Type_Casting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
